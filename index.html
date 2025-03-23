@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Purity</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="brand rounded-4" src="./images/logo.jpg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="icon1" class="navbar-toggler-icon open"></span>
+          <i id="icon2" class="fa-solid fa-x close"></i>
+        </button>
+        <div class="collapse cont navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >الصفحة الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">المنتجات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home -->
+    <div id="home" class="landing position-relative">
+      <img src="./images/logo.jpg" class="w-100 h-100" alt="" />
+      <div class="text">
+        <h2>نقاء</h2>
+        <p id="typewriter"></p>
+      </div>
+    </div>
+
+    <!-- products -->
+
+    <div id="products" class="products m-5">
+      <div class="container">
+        <div class="row justify-content-center gap-4">
+          <div
+            class="card col-12 col-md-6 col-lg-4 p-3 shadow-lg rounded-4 border-0"
+            style="width: 20rem"
+          >
+            <img
+              src="./images/noarahBarsim.jpg"
+              class="card-img-top w-100 rounded-top-4"
+              alt="عسل نوارة البرسيم"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold border-bottom pb-2 text-gradient">
+                عسل نوارة البرسيم
+              </h5>
+              <p class="card-text">
+                عسل نوارة البرسيم يتم إستخراجه من أزهار البرسيم بواسطة النحل
+              </p>
+              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-md-6 col-lg-4 p-3 shadow-lg rounded-4 border-0"
+            style="width: 20rem"
+          >
+            <img
+              src="./images/moaleh.jpg"
+              class="card-img-top w-100 rounded-top-4"
+              alt="عسل الموالح"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold border-bottom pb-2 text-gradient">
+                عسل الموالح
+              </h5>
+              <p class="card-text">
+                يتم استخراجه من رحيق أزهار أشجار الموالح مثل البرتقال والليمون
+                والجريب فروت
+              </p>
+              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+            </div>
+          </div>
+
+          <div
+            class="card col-12 col-md-6 col-lg-4 p-3 shadow-lg rounded-4 border-0"
+            style="width: 20rem"
+          >
+            <img
+              src="./images/ziton.jpg"
+              class="card-img-top w-100 rounded-top-4"
+              alt="زيت الزيتون"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold border-bottom pb-2 text-gradient">
+                زيت الزيتون
+              </h5>
+              <p class="card-text">
+                زيت الزيتون هو زيت طبيعي نقي يُستخرج من ثمار شجرة الزيتون،
+                ويُعرف بقيمته الغذائية العالية
+              </p>
+              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="contact m-5">
+      <div class="container">
+        <div class="cont-form shadow-lg w-75 p-5 rounded-4 mx-auto">
+          <h4 class="fw-bold text-center order-text mb-3">طلب اوردر</h4>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >الاسم</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">
+                رقم الهاتف</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <select class="form-select mb-3" id="">
+              <option value="نوارة برسيم">عسل نوارة برسيم</option>
+              <option value="نوارة برسيم">عسل موالح</option>
+              <option value="نوارة برسيم">زيت زيتون</option>
+            </select>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">
+                الكمية
+              </label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <button type="submit" class="btn sub btn-primary">ارسال</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>

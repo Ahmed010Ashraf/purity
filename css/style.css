@@ -1,0 +1,245 @@
+body{
+    font-family: "Cairo", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar  */
+.navbar .brand{
+    width: 55px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler{
+    border:none;
+    transition: .3s;
+}
+
+.close{
+    opacity: 0;
+    display: none;
+}
+.open{
+    opacity: 1;
+    display: block;
+}
+
+.navbar-toggler-icon,i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navbar {
+    background: linear-gradient(to left, #007bff, #0056b3); 
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar-nav .nav-link {
+    color: white ;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 8px 15px;
+}
+
+.navbar-nav .active{
+    color: #ffdd57 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Gold hover effect */
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #ffdd57 ;
+}
+
+
+.open {
+    display: inline-block !important;
+}
+
+.close {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: right;
+    }
+}
+
+.cont{
+    margin-right: 200px;
+}
+
+@media (max-width: 991px) {
+    .cont {
+        margin-right: 0;
+    }
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+/* landing */
+.landing{
+    height: calc(100vh - 80px);
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#5790ff6e ;
+}
+
+.landing .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.landing .text h2{
+    background: linear-gradient(to right, #ffdd57, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.landing .text {
+    background: linear-gradient(to right, #ffdd57, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+    font-size: 30px;
+}
+@media (max-width:991px) {
+    .landing .text p{
+        font-size: 20px;
+    }
+}
+@media (max-width:771px) {
+    .landing .text p{
+        font-size: 18px;
+    }
+}
+
+
+/* products */
+
+.card-text{
+    text-align: right;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #ffdd57, #ffae00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #ffdd57, #ffae00);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #ffae00, #ffdd57);
+    transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 991px) {
+    .products{
+        margin: 50px 10px 10px 10px  !important;
+    }
+}
+/* contatc */
+
+.order-text{
+    background: linear-gradient(to right, #d4a017, #ffb700, #ffdd57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ffdd57;
+}
+
+.sub{
+    background: linear-gradient(to right, #ffdd57,#ffae00, #ffae00);
+    transition: .5s;
+    display: block;
+    font-size:20px;
+    width: 100%;
+}
+
+
+
+.sub:hover {
+    transform: scale(1.01);
+}
+
+
+@media (max-width: 991px) {
+    .contact{
+        margin: 50px 10px 10px 10px  !important;
+    }
+    .cont-form{
+        padding: 20px !important;
+        width: 100% !important;
+    }
+}
