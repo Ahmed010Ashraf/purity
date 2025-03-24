@@ -351,3 +351,22 @@ html{
     cursor: pointer;
   }
   
+
+
+
+
+  .order-p{
+    text-align:  right;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .order-p::after{
+    content: "<-";
+    margin-left: 5px;
+  }
+
+
+  .alert-primary{
+    display: none;
+  }

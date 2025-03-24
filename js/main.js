@@ -183,16 +183,7 @@ mores.forEach(m=>{
 
 
 
-// ceckbox
-let allCheckbox = document.querySelectorAll("input[type='radio']");
 
-allCheckbox.forEach(function (che) {
-    che.addEventListener("change", function () {
-        if (this.checked) {
-            console.log(this.value);
-        }
-    });
-});
 
 
 
@@ -206,42 +197,42 @@ function updateRadioButtons(selectedValue) {
     if (selectedValue === "نوارة برسيم") {
         radiobuttons.innerHTML = `
         <div class="mb-3 custom-checkbox">
-            <input id="radio1" type="radio" name="honeyOption" value="واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن">
-            <label for="radio1">واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن</label>
+            <input id="checkbox1" type="checkbox" name="honeyOption" value="واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن">
+            <label for="checkbox1">واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن</label>
         </div>
         <div class="mb-3 custom-checkbox">
-            <input id="radio2" type="radio" name="honeyOption" value="٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن">
-            <label for="radio2">٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن</label>
+            <input id="checkbox2" type="checkbox" name="honeyOption" value="٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن">
+            <label for="checkbox2">٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن</label>
         </div>
         <div class="mb-3 custom-checkbox">
-            <input id="radio3" type="radio" name="honeyOption" value="٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني">
-            <label for="radio3">٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني</label>
+            <input id="checkbox3" type="checkbox" name="honeyOption" value="٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني">
+            <label for="checkbox3">٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني</label>
         </div>`;
     } 
     else if (selectedValue === "موالح") {
         radiobuttons.innerHTML = `
         <div class="mb-3 custom-checkbox">
-            <input id="radio4" type="radio" name="honeyOption" value="واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن">
-            <label for="radio4">واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن</label>
+            <input id="checkbox4" type="checkbox" name="honeyOption" value="واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن">
+            <label for="checkbox4">واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن</label>
         </div>
         <div class="mb-3 custom-checkbox">
-            <input id="radio5" type="radio" name="honeyOption" value="٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن">
-            <label for="radio5">٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن</label>
+            <input id="checkbox5" type="checkbox" name="honeyOption" value="٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن">
+            <label for="checkbox5">٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن</label>
         </div>
         <div class="mb-3 custom-checkbox">
-            <input id="radio6" type="radio" name="honeyOption" value="٦ك عسل موالح بسعر 1000 جنية وشحن مجاني">
-            <label for="radio6">٦ك عسل موالح بسعر 1000 جنية وشحن مجاني</label>
+            <input id="checkbox6" type="checkbox" name="honeyOption" value="٦ك عسل موالح بسعر 1000 جنية وشحن مجاني">
+            <label for="checkbox6">٦ك عسل موالح بسعر 1000 جنية وشحن مجاني</label>
         </div>`;
     } 
     else if (selectedValue === "زيت زيتون") {
         radiobuttons.innerHTML = `
         <div class="mb-3 custom-checkbox">
-            <input id="radio7" type="radio" name="honeyOption" value="١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن">
-            <label for="radio7">١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن</label>
+            <input id="checkbox7" type="checkbox" name="honeyOption" value="١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن">
+            <label for="checkbox7">١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن</label>
         </div>
         <div class="mb-3 custom-checkbox">
-            <input id="radio8" type="radio" name="honeyOption" value="٢ لتر بسعر ٧٥٠ جنية وشحن مجاني">
-            <label for="radio8">٢ لتر بسعر ٧٥٠ جنية + وشحن مجاني</label>
+            <input id="checkbox8" type="checkbox" name="honeyOption" value="٢ لتر بسعر ٧٥٠ جنية وشحن مجاني">
+            <label for="checkbox8">٢ لتر بسعر ٧٥٠ جنية + وشحن مجاني</label>
         </div>`;
     }
 }
@@ -255,6 +246,37 @@ updateRadioButtons(defaultValue);
 
 
 
+
+// handel order 
+
+let arr = [];
+
+
+let radiobuttonss = document.getElementById("radiobuttons");
+let alertPrimary = document.querySelector(".alert-primary");
+let cartona = "";
+
+radiobuttonss.addEventListener("change", function (event) {
+    if (event.target.type === "checkbox") {
+      if(event.target.checked == true){
+        arr.push(event.target.value)
+      }else {
+        let index = arr.indexOf(event.target.value);
+        if (index !== -1) {
+            arr.splice(index, 1); 
+        }
+      }
+      
+        console.log(arr);
+        alertPrimary.innerHTML =`<h4 class="fw-bold text-center">الاوردر</h4>`
+        for(let i = 0 ; i<arr.length ; i++){
+          cartona = `<p class="order-p">${arr[i]}</p>`
+          alertPrimary.innerHTML += cartona
+        }
+        alertPrimary.style.display = arr.length > 0 ? "block" : "none";
+
+    }
+});
 
 
 
@@ -275,8 +297,31 @@ if(!name || !phone || !selectedRadio){
     return;
 }
 
-let msg =  `الاسم: ${name}%0Aرقم الهاتف: ${phone}%0Aالمنتج: ${product}%0Aالكمية: ${selectedRadio.value}`;
+
+let container = ""
+// for(let i = 0 ; i< arr.length ; i++){
+// container += arr[i];
+// container+='\n';
+// }
+// console.log(container);
+ container = arr.map(item => `- ${item}`).join("%0A");
+
+
+let msg =  `الاسم: ${name}%0Aرقم الهاتف: ${phone}%0Aالكمية: ${container}`;
+console.log(msg);
+
 let whatsappUrl = `https://wa.me/201002669123?text=${msg}`;
 
 window.open(whatsappUrl, "_blank");
 })
+
+
+
+
+
+
+
+
+
+
+
