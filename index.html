@@ -16,6 +16,7 @@
     <title>Purity</title>
   </head>
   <body>
+   <div class="main-section">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -81,7 +82,7 @@
               <p class="card-text">
                 عسل نوارة البرسيم يتم إستخراجه من أزهار البرسيم بواسطة النحل
               </p>
-              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+              <button id="1" class="btn btn-gradient more d-block w-100 mt-4">المزيد</button>
             </div>
           </div>
 
@@ -102,7 +103,7 @@
                 يتم استخراجه من رحيق أزهار أشجار الموالح مثل البرتقال والليمون
                 والجريب فروت
               </p>
-              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+              <button id="2" class="btn btn-gradient more d-block w-100">المزيد</button>
             </div>
           </div>
 
@@ -123,7 +124,7 @@
                 زيت الزيتون هو زيت طبيعي نقي يُستخرج من ثمار شجرة الزيتون،
                 ويُعرف بقيمته الغذائية العالية
               </p>
-              <a href="#" class="btn btn-gradient d-block">المزيد</a>
+              <button id="3" class="btn btn-gradient more d-block w-100">المزيد</button>
             </div>
           </div>
         </div>
@@ -160,27 +161,31 @@
 
             <select class="form-select mb-3" id="">
               <option value="نوارة برسيم">عسل نوارة برسيم</option>
-              <option value="نوارة برسيم">عسل موالح</option>
-              <option value="نوارة برسيم">زيت زيتون</option>
+              <option value="موالح">عسل موالح</option>
+              <option value="زيت زيتون">زيت زيتون</option>
             </select>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">
-                الكمية
-              </label>
-              <input
-                type="number"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
+            <div class="radiobuttons">
+
             </div>
+            
 
             <button type="submit" class="btn sub btn-primary">ارسال</button>
           </form>
         </div>
       </div>
     </div>
+   </div>
+
+   <div class="product-section ">
+
+    <div class="container position-relative  p-3 shadow-lg">
+      <h4 class=" position-absolute x-close">x</h4>
+      <div class="details row justify-content-between">
+        
+      </div>
+    </div>
+   </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>

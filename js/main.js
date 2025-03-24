@@ -49,3 +49,234 @@ function typeWriter() {
 }
 
 typeWriter()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //////////////////////handel product details
+
+let xClose = document.querySelector(".x-close");
+xClose.addEventListener("click",()=>{
+    document.querySelector(".product-section").style.display = "none";
+    document.querySelector(".main-section").style.display = "block";
+});
+
+
+
+// handel click on the more button////////////////////////
+
+let mores = document.querySelectorAll(".more");
+let fillSectino = document.querySelector(".product-section .details");
+console.log(mores);
+
+mores.forEach(m=>{
+    m.addEventListener("click" , ()=>{
+        document.querySelector(".product-section").style.display = "block";
+        document.querySelector(".main-section").style.display = "none";
+        if(m.id == 2){
+            fillSectino.innerHTML = `<img src="./images/moaleh.jpg" class="rounded-4 col-12 col-md-4" alt="">
+      <div class="product-desc col-12 col-md-7">
+      <div class="first-line mt-5">
+        <h3>عسل  الموالح</h3>
+        <p>عسل الموالح هو نوع من العسل الطبيعي يُنتج من رحيق زهور أشجار الموالح (الحمضيات) مثل البرتقال، الليمون، اليوسفي، والجريب فروت. يتميز برائحته العطرية الخفيفة وطعمه اللذيذ، وهو غني بالفوائد الصحية.   😊</p>
+      </div>
+        <div class="ingrediants">
+          <h3>المواصفات</h3>
+          <ul>
+            <li>االلون: يميل إلى اللون الذهبي الفاتح أو الكهرماني</li>
+            <li>النكهة: حلوة وخفيفة مع نكهة حمضية منعشة.</li>
+            <li>القوام: متوسط الكثافة، ليس كثيفًا جدًا.</li>
+            <li>التبلور: يتبلور بسرعة نسبية مقارنة بأنواع أخرى مثل عسل السدر.</li>
+          </ul>
+        </div>
+        <div class="benefits">
+          <h3>الفوائد الصحية</h3>
+          <ul>
+            <li>تعزيز المناعة 🛡️: يحتوي على نسبة عالية من فيتامين C ومضادات الأكسدة التي تقوي الجهاز المناعي.</li>
+            <li>مضاد للبكتيريا والفيروسات 🦠: يمتلك خصائص طبيعية تحارب العدوى وتساعد في تهدئة التهابات الحلق.</li>
+            <li>تحسين الهضم 🍽️: يعمل على تهدئة المعدة وتحسين عملية الهضم.</li>
+            <li>مفيد لصحة البشرة ✨: يساعد في ترطيب البشرة وتخفيف الالتهابات الجلدية.</li>
+          </ul>
+        </div>
+      </div>`
+        }else if (m.id == 1){
+            fillSectino.innerHTML = `<img src="./images/noarahBarsim.jpg" class="rounded-4 col-12 col-md-4" alt="">
+            <div class="product-desc col-12 col-md-7">
+            <div class="first-line mt-5">
+              <h3>عسل نوارة البرسيم</h3>
+              <p>عسل نوارة البرسيم هو نوع من العسل الطبيعي المستخرج من رحيق زهور البرسيم، وهو أحد أكثر أنواع العسل انتشارًا بسبب طعمه اللذيذ وفوائده الصحية. إليك أهم المعلومات عنه: إذا كنت تفكر في شراء عسل نوارة البرسيم، فمن الأفضل الحصول عليه من مصادر موثوقة لضمان جودته ونقائه   😊</p>
+            </div>
+              <div class="ingrediants">
+                <h3>المواصفات</h3>
+                <ul>
+                  <li>اللون: يتراوح بين الأصفر الفاتح والذهبي.</li>
+                  <li>النكهة: خفيفة وحلوة مع مذاق ناعم</li>
+                  <li>القوام: سائل وخفيف مقارنة ببعض أنواع العسل الأخرى.</li>
+                  <li>التبلور: يتبلور ببطء وقد يصبح قوامه أكثر سمكًا بمرور الوقت.</li>
+                </ul>
+              </div>
+              <div class="benefits">
+                <h3>الفوائد الصحية</h3>
+                <ul>
+                  <li>مصدر طبيعي للطاقة: يحتوي على سكريات طبيعية مثل الفركتوز والجلوكوز التي تمد الجسم بالطاقة.</li>
+                  <li>تعزيز المناعة: يحتوي على مضادات أكسدة تساعد في تقوية جهاز المناعة.</li>
+                  <li>تحسين الهضم: يعمل كمهدئ طبيعي للجهاز الهضمي ويساعد في علاج اضطرابات المعدة.</li>
+                  <li>مفيد لصحة القلب: قد يساهم في تقليل مستويات الكوليسترول الضار.</li>
+                </ul>
+              </div>
+            </div>`
+        }else {
+            fillSectino.innerHTML = `<img src="./images/ziton.jpg" class="rounded-4 col-12 col-md-4" alt="">
+      <div class="product-desc col-12 col-md-7">
+      <div class="first-line mt-5">
+        <h3>زيت الزيتون</h3>
+        <p>زيت الزيتون هو زيت طبيعي يُستخرج من ثمار الزيتون، وهو أحد أكثر الزيوت الصحية والمفيدة للجسم. يتميز بنكهته الغنية وفوائده العديدة للصحة والبشرة والشعر، ويُستخدم في الطهي والعلاجات الطبيعية. 🫒</p>
+      </div>
+        <div class="ingrediants">
+          <h3>المواصفات</h3>
+          <ul>
+            <li>اللون: يتراوح بين الأصفر الذهبي والأخضر حسب نوع الزيتون وطريقة العصر.</li>
+            <li>النكهة: غنية ومميزة، وقد تكون خفيفة أو حادة حسب نوع الزيت.</li>
+            <li>القوام: متوسط الكثافة، غير لزج وسهل الامتصاص.</li>
+            <li>الجودة: يتوفر بدرجات مختلفة، مثل البكر الممتاز والبكر والعادي.</li>
+          </ul>
+        </div>
+        <div class="benefits">
+          <h3>الفوائد الصحية</h3>
+          <ul>
+            <li>تعزيز صحة القلب ❤️: يحتوي على دهون صحية تقلل من الكوليسترول الضار وتدعم صحة القلب.</li>
+            <li>مضاد للأكسدة 🛡️: غني بمضادات الأكسدة التي تحارب الشيخوخة وتحمي الجسم من الأمراض.</li>
+            <li>تحسين الهضم 🍽️: يساعد في تحسين عملية الهضم وتقليل مشاكل المعدة.</li>
+            <li>مفيد للبشرة والشعر ✨: يرطب البشرة ويعزز صحة الشعر ويمنحه لمعانًا طبيعيًا.</li>
+          </ul>
+        </div>
+      </div>`;
+
+        }
+        
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ceckbox
+let allCheckbox = document.querySelectorAll("input[type='radio']");
+
+allCheckbox.forEach(function (che) {
+    che.addEventListener("change", function () {
+        if (this.checked) {
+            console.log(this.value);
+        }
+    });
+});
+
+
+
+
+
+
+let selectbox = document.querySelector(".form-select");
+let radiobuttons = document.querySelector(".radiobuttons");
+
+function updateRadioButtons(selectedValue) {
+    if (selectedValue === "نوارة برسيم") {
+        radiobuttons.innerHTML = `
+        <div class="mb-3 custom-checkbox">
+            <input id="radio1" type="radio" name="honeyOption" value="واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن">
+            <label for="radio1">واحد كيلو عسل نوارة برسيم بسعر ١٤٠ جنية + مصاريف الشحن</label>
+        </div>
+        <div class="mb-3 custom-checkbox">
+            <input id="radio2" type="radio" name="honeyOption" value="٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن">
+            <label for="radio2">٣ك عسل نوارة برسيم بسعر ٤٠٠ جنية + مصاريف الشحن</label>
+        </div>
+        <div class="mb-3 custom-checkbox">
+            <input id="radio3" type="radio" name="honeyOption" value="٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني">
+            <label for="radio3">٦ك عسل نوارة برسيم بسعر الاكثر مبيعآ بسعر ٨٢٥ جنية وشحن مجاني</label>
+        </div>`;
+    } 
+    else if (selectedValue === "موالح") {
+        radiobuttons.innerHTML = `
+        <div class="mb-3 custom-checkbox">
+            <input id="radio4" type="radio" name="honeyOption" value="واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن">
+            <label for="radio4">واحد كيلو عسل موالح بسعر 170 جنية + مصاريف الشحن</label>
+        </div>
+        <div class="mb-3 custom-checkbox">
+            <input id="radio5" type="radio" name="honeyOption" value="٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن">
+            <label for="radio5">٣ك عسل موالح بسعر 500 جنية + مصاريف الشحن</label>
+        </div>
+        <div class="mb-3 custom-checkbox">
+            <input id="radio6" type="radio" name="honeyOption" value="٦ك عسل موالح بسعر 1000 جنية وشحن مجاني">
+            <label for="radio6">٦ك عسل موالح بسعر 1000 جنية وشحن مجاني</label>
+        </div>`;
+    } 
+    else if (selectedValue === "زيت زيتون") {
+        radiobuttons.innerHTML = `
+        <div class="mb-3 custom-checkbox">
+            <input id="radio7" type="radio" name="honeyOption" value="١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن">
+            <label for="radio7">١ لتر بسعر ٣٧٥ جنية + مصاريف الشحن</label>
+        </div>
+        <div class="mb-3 custom-checkbox">
+            <input id="radio8" type="radio" name="honeyOption" value="٢ لتر بسعر ٧٥٠ جنية وشحن مجاني">
+            <label for="radio8">٢ لتر بسعر ٧٥٠ جنية + وشحن مجاني</label>
+        </div>`;
+    }
+}
+
+selectbox.addEventListener("change", (event) => {
+    updateRadioButtons(event.target.value);
+});
+
+let defaultValue = selectbox.value || "نوارة برسيم";
+updateRadioButtons(defaultValue);
+
+
+
+
+
+
+// send to watsapp
+
+let sendButton = document.querySelector(".sub");
+
+sendButton.addEventListener("click" , function(e){
+e.preventDefault();
+let name = document.getElementById("exampleInputPassword1").value;
+let phone = document.getElementById("exampleInputEmail1").value;
+let product = document.querySelector(".form-select").value;
+let selectedRadio = document.querySelector("input[name='honeyOption']:checked");
+
+
+if(!name || !phone || !selectedRadio){
+    alert("ادخل جميع البيانات بشكل صحيح")
+    return;
+}
+
+let msg =  `الاسم: ${name}%0Aرقم الهاتف: ${phone}%0Aالمنتج: ${product}%0Aالكمية: ${selectedRadio.value}`;
+let whatsappUrl = `https://wa.me/201002669123?text=${msg}`;
+
+window.open(whatsappUrl, "_blank");
+})

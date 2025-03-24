@@ -243,3 +243,111 @@ html{
         width: 100% !important;
     }
 }
+
+
+/* /////////////////////////////////////////////////
+ */
+ /* product description */
+ .x-close{
+    top: 10px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+ }
+
+ .product-desc h3{
+    font-weight: bold;
+    background: linear-gradient(to right, #ffdd57, #ffae00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+ .first-line p{
+    line-height: 1.7;
+    font-weight: 600;
+    color: #777;
+ }
+ .product-section .container{
+    background-color: cornsilk;
+    margin-top: 50px;
+ }
+ @media (max-width:991px) {
+    .product-section .container{
+      
+        margin-top: 20px;
+     }
+ }
+
+ .product-desc {
+    direction: rtl;
+ }
+
+ .product-desc ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #403f3f;
+
+ }
+ .product-desc ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a8"; 
+    font-weight: 900; 
+    margin-left: 5px;
+ }
+
+ .product-section{
+    display: none;
+ }
+
+
+
+
+
+
+
+
+
+ /* /////////////////////////////// */
+ /* Hide default checkbox */
+.custom-checkbox input {
+    appearance: none; /* Removes default styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  
+  /* Create the checkmark */
+  .custom-checkbox input:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  .custom-checkbox input:checked::before {
+    content: "✔";
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Style the label */
+  .custom-checkbox label {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
